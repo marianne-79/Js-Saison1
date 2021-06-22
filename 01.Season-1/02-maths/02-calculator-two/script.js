@@ -6,12 +6,22 @@
 
     const performOperation = operation => {
         // perform the operation
+
+        let op_one = new Number(document.getElementById("op-one").value);
+        let op_two = new Number(document.getElementById("op-two").value);
+        
+        switch (operation) {
+            case "addition": return op_one + op_two;
+            case "substraction": return op_one - op_two;
+            case "multiplication": return op_one * op_two;
+            case "division": return op_one / op_two;
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
         $btn.addEventListener(
             "click",
-            () => (performOperation($btn.id), false),
+            () =>(alert(performOperation($btn.id)), false),
         ),
     );
 })();
