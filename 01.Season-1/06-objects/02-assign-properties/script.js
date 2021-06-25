@@ -19,4 +19,20 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        for (let i = 0; i < computers.length; i++) {
+            const computer = computers[i];
+          if (computer.available == null){
+              computer.available = defaultProps.available;
+          } 
+          if(computer.os == null) {
+              computer.os = defaultProps.os;
+          } 
+          if(computer.user == null) {
+                computer.user = defaultProps.user;
+          }
+        }
+        console.log(computers);
+    });
+    
 })();

@@ -18,5 +18,8 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        let four = fruits["kiwi"];
+    }
+    
 })();

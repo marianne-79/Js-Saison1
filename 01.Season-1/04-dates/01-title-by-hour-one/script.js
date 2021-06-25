@@ -8,4 +8,18 @@
 
     // your code here
 
+    let time =  document.getElementById("target").innerHTML = "new-value";
+    
+    if ( time < 18){
+        alert("Hello !");
+    }
+    
+    else 
+    
+    { 
+        alert("Good evening");
+    
+}
+
+
 })();

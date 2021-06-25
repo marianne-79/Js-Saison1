@@ -3,12 +3,16 @@
 
 (() => {
     const person = {
-        lastname: "Delnatte",
-        firstname: "Pierre-Antoine",
-        nickname: "Leny",
-        birthDate: "08-05-1985",
-        city: "Liège",
-        status: "married",
+        nom: "Auquier",
+        prenom: "Marianne",
+        surnom: "Ma",
+        age: "158",
+        planete: "Mars",
+        status: "E.T",
     };
     // your code here
+
+    for(const key in person) {
+        console.log(key, person[key])
+    }
 })();
