@@ -8,16 +8,20 @@
 
         // your code here
         let list = document.getElementById("numbers").value;
-        let total = list.split(",");
+        let split = list.split(",");
 
-        const points =[];
+        let points =[];
         
-            for (let num of total) {
-                points.push(Number(num));
-            }
-        points.sort;
+            for (let list of split) {
+                points.push(Number(list)) }
+                points.sort(function (a , b) {
+
+             if (a > b) return 1;
+             if (a < b) return -1;      
+                    return 0;
+                });
         
-        alert(total);
+        alert(points);
     });
 
 })();

@@ -9,4 +9,9 @@
         }
     }
     // your code here
+
+    let  cat1  =  new  Cat ( "Skitty" ,  9 ) ;
+    let  cat2 =  new  Cat ( "Pixel" ,  6 ) ;
+
+    console.log(cat1 ,  cat2) ;
 })();

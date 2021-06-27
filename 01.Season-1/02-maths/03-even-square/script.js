@@ -9,14 +9,14 @@
         // your code here
 
         function square() {
-            let num = 21;
+            let n = 21;
             let msg = "";
             let total = "0";
 
-        for (let x = 1; x <= num; x++)    
+        for (let x = 1; x <= n ; x++)    
 {
     total = x * x;
-    msg = msg + " " + x + " * " + x + " = " + total + "\num";
+    msg = msg + " " + x + " * " + x + " = " + total + "\n";
 }
  alert(msg);
         }

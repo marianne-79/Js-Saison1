@@ -81,5 +81,16 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
 
+             
+    let ind = people.findIndex(people => (people.lastname == "Dupont") && (people.firstname == "jean"));
+    people.forEach(function(people) {
+
+        if(people.lastname == "Dupont" && people.firstname == "Jean"){
+
+            console.log(people.email + " " + people.lastname + " " + people.firstname + " " + ind);
+    }
+});
+    });
 })();

@@ -81,5 +81,13 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
 
+    people.forEach(function(people) {
+        if (people.age <= 18) {
+            return people.age}
+            console.log(" lastname : " + people.lastname + " firstname : " + people.firstname + " age : " + people.age);
+        });
+    });    
+     
 })();

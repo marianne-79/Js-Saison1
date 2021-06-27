@@ -8,4 +8,16 @@
 
     // your code here
 
+    let today = new Date ();
+    let time =  today.getHours ();
+    
+    if ( time < 17.30) {
+        document.getElementById("target").innerHTML = "Hello";
+    }
+    else 
+    
+    { 
+        document.getElementById("target").innerHTML = "Good Evening";
+    }
+
 })();
