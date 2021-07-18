@@ -12,5 +12,19 @@
     ];
 
     // your code here
+    
+    let currentSlideIndex = 0;
+
+    function displaySlide() {
+        var file = gallery[ currentSlideIndex ];
+        document.getElementById("img").src = gallery;
+    }
+
+    currentSlideIndex++;
+    if( currentSlideIndex >= gallery.length ) {
+        currentSlideIndex = 0;
+    }
+displaySlide();
+
 
 })();

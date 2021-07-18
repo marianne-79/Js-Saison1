@@ -19,4 +19,11 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => {
+        
+        let x = fruits.includes("apple");
+        alert(x);
+        
+    });
+
 })();

@@ -8,4 +8,25 @@
         }
     }
     // your code here
+
+    class Cat extends Animal{
+        constructor(name){
+            super(),
+            this.name=name
+        }
+        static greeting = "Miaou"
+    }
+    class Dog extends Animal{
+        constructor(name){
+            super(),
+            this.name = name
+        }
+        static greeting = "wouaf wouaf"
+    }
+    document.getElementById("run").addEventListener("click", () => {
+        let nameCat = new Cat("Clyde");
+        let nameDog = new Dog("Mojo");
+        alert(JSON.stringify(nameCat.sayHello()));
+        alert(JSON.stringify(nameDog.sayHello()));
+      });
 })();

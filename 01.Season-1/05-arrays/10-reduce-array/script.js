@@ -83,4 +83,13 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => {
+        let initial = 0
+        let sum = people.reduce(function (acc, current) {
+            return acc + current.age;
+        },initial);
+        alert(sum);
+    
+    });
+
 })();
