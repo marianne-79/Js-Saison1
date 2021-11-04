@@ -4,5 +4,14 @@
 (() => {
 
     // your code here
+    let p = document.getElementById("counter");
+    let m = document.getElementById("pass-one");
+    m.setAttribute("maxlength", "10");
+    m.addEventListener("input", () => {
+        let n = document.getElementById("pass-one").value;
+        let o = n.length;
+        p.innerHTML = o + "/10"
+    });
+
 
 })();

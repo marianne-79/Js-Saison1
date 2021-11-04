@@ -4,8 +4,14 @@
 (() => {
 
     // your code here
-    document.querySelector("figure > img").addEventListener("mouseover", (e) => {
-        e.target.src = e.target.getAttribute("data-hover");
-    })
+    let img = document.querySelector('img');
+    let start = img.src;
+    let hover = img.getAttribute('data-hover'); 
 
-})();
+    img.onmouseover = () => { img.src = hover; }
+    img.onmouseout = () => { img.src = start; } 
+
+    
+
+});
+

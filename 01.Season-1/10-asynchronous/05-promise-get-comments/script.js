@@ -3,4 +3,12 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts().then((articles) => {
+            articles.forEach(article => window.lib.getComments(article.id).then((commentaries) => {
+                article.comments = commentaries;
+            }));
+            console.log(articles);
+        });
+    });
 })();

@@ -3,4 +3,11 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts(function(error, articles){
+            articles.forEach (article => window.lib.getComments(article.id, function(error, comments){article.comments = comments;}));
+            console.log(articles); 
+        });
+        
+    });
 })();

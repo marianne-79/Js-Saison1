@@ -4,5 +4,11 @@
 (() => {
 
     // your code here
-
+    document.getElementById("slider").addEventListener("input", () => {
+        var Slidevalue = document.getElementById("slider").value;
+        function updateTextInput(val) {
+            document.getElementById("target").innerHTML = "0" + val;
+        }
+        updateTextInput(Slidevalue);
+    })
 })();
