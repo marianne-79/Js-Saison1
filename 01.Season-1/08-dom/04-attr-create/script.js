@@ -4,7 +4,7 @@
 (() => {
 
     // your code here
-    ocument.getElementById("target").innerHTML = "<img src='" + document.getElementById("source").getAttribute("data-image") + "'>";
+    document.getElementById("target").innerHTML = "<img src='" + document.getElementById("source").getAttribute("data-image") + "'>";
     document.getElementById("source").remove();
 
 })();
